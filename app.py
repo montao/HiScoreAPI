@@ -1,3 +1,8 @@
+# HTTP GET /<userid/login will return a session token that will expire after 10 minutes
+# HTTP POST /<levelid>/score?sessionkey=<sessionkey> will let you post {"score": <score>} and store it
+# HTTP GET /<levelid>/highscorelist will retrieve the highscore list of the top 15 unique users
+  
+
 from datetime import timedelta, datetime
 import http.server
 import json
